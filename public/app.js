@@ -11,6 +11,13 @@ async function loadVin() {
         return;
     }
 
+    // Static demo on GitHub Pages (demo.js): no server to fetch the window sticker from.
+    if (window.ALFAVIN_DEMO) {
+        errorEl.classList.add("hidden");
+        window.showDemoReport();
+        return;
+    }
+
     // Reset UI
     errorEl.classList.add("hidden");
     resultEl.classList.add("hidden");

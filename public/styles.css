@@ -430,3 +430,12 @@ footer {
 .footer-links a:hover {
     color: var(--accent-color);
 }
+
+.demo-note {
+    font-size: 0.85rem;
+    margin-top: -8px;
+}
+.demo-note a {
+    color: inherit;
+    text-decoration: underline;
+}
